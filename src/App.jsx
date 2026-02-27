@@ -16,14 +16,31 @@
 //! belongs to FunctionBased and ClassBased and StatesInFBC and so on.
 import ClassBased from "./AllTopics/01_TypesOfComponents/ClassBasedComponents";
 import FunctionBased from "./AllTopics/01_TypesOfComponents/FunctionBased";
+import Counter from "./AllTopics/02_States/Counter";
+import StatesInCBC from "./AllTopics/02_States/StatesinCBC";
+import StatesInFBC from "./AllTopics/02_States/StatesinFBC";
+import StateTask1 from "./AllTopics/02_States/StateTask1";
+import ThemeChange from "./AllTopics/02_States/TheamChange";
+import PropsParent from "./AllTopics/03_Props/PropsParents";
 
 
 const App = () => {
 
   return (
     <>
-        <FunctionBased/>
+        {/* <FunctionBased/>
         <ClassBased/>
+        <StatesInCBC/> */} 
+        {/* <StatesInFBC/>
+        <ThemeChange/> */}
+        {/* <Counter/> */}
+        {/* <StateTask1/> */}
+        <PropsParent/>
+        
+
+        
+
+
     </>
   );
 };
