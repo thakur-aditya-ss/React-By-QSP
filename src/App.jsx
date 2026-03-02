@@ -36,11 +36,6 @@ const App = () => {
         {/* <Counter/> */}
         {/* <StateTask1/> */}
         <PropsParent/>
-        
-
-        
-
-
     </>
   );
 };
