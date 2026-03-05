@@ -27,6 +27,7 @@ import Child2 from "./AllTopics/04_ChildrenProps/Child2";
 import ChildrenProps from "./AllTopics/04_ChildrenProps/ChildrenProps";
 import ChildrenProps2 from "./AllTopics/04_ChildrenProps/ChildrenProps2";
 import UpliftingParent from "./AllTopics/05_StateUplifting/UpliftingParent";
+import DrillingParent from "./AllTopics/06_PropsDriling/DrillingParent";
 
 
 const App = () => {
@@ -46,7 +47,10 @@ const App = () => {
           <Child1/>
           <Child2/>
         </ChildrenProps2> */}
-        <UpliftingParent/>
+        {/* <UpliftingParent/> */}
+        <DrillingParent/>
+
+        {/* Context : is use for manage both StateUplifting And DropDriling */}
         
 
     </>
