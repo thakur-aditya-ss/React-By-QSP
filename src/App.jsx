@@ -22,7 +22,11 @@ import StatesInFBC from "./AllTopics/02_States/StatesinFBC";
 import StateTask1 from "./AllTopics/02_States/StateTask1";
 import ThemeChange from "./AllTopics/02_States/TheamChange";
 import PropsParent from "./AllTopics/03_Props/PropsParents";
+import Child1 from "./AllTopics/04_ChildrenProps/Child1";
+import Child2 from "./AllTopics/04_ChildrenProps/Child2";
 import ChildrenProps from "./AllTopics/04_ChildrenProps/ChildrenProps";
+import ChildrenProps2 from "./AllTopics/04_ChildrenProps/ChildrenProps2";
+import UpliftingParent from "./AllTopics/05_StateUplifting/UpliftingParent";
 
 
 const App = () => {
@@ -36,8 +40,15 @@ const App = () => {
         <ThemeChange/> */}
         {/* <Counter/> */}
         {/* <StateTask1/> */}
-        <PropsParent/>
-        <ChildrenProps/>
+        {/* <PropsParent/> */}
+        {/* <ChildrenProps/> */}
+        {/* <ChildrenProps2>
+          <Child1/>
+          <Child2/>
+        </ChildrenProps2> */}
+        <UpliftingParent/>
+        
+
     </>
   );
 };
