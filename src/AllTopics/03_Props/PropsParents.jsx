@@ -1,19 +1,24 @@
+import { useState } from "react";
 import PropsChild from "./PropsChild";
 import PropsChild2 from "./PropsChild2";
 import PropsChild3 from "./PropsChild3";
 
 const PropsParent = () => {
+    const [value, setValue] = useState("");
+
+
     let data1 = "Hello World";
     let data2 = [10,20,30,40];
     let data3 = {firstname : "John"};
 
     function greet(val) {
         console.log("Welcome", val);
+        setValue(`Welcome ${val}`)
     };
 
     return (
         <div>
-            <h1>PropsParent</h1>
+            <h1>PropsParent : {value} </h1>
 
             <hr />
 
@@ -26,7 +31,7 @@ const PropsParent = () => {
 
             <hr />
 
-            {/* Sending Multiple Data in singlr props */}
+            {/* Select Multiple Data in single props */}
             <PropsChild2 value = {{ data1,data2,data3}}/>
             
             <hr />

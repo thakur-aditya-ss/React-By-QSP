@@ -22,6 +22,7 @@ import StatesInFBC from "./AllTopics/02_States/StatesinFBC";
 import StateTask1 from "./AllTopics/02_States/StateTask1";
 import ThemeChange from "./AllTopics/02_States/TheamChange";
 import PropsParent from "./AllTopics/03_Props/PropsParents";
+import ChildrenProps from "./AllTopics/04_ChildrenProps/ChildrenProps";
 
 
 const App = () => {
@@ -36,6 +37,7 @@ const App = () => {
         {/* <Counter/> */}
         {/* <StateTask1/> */}
         <PropsParent/>
+        <ChildrenProps/>
     </>
   );
 };

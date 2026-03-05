@@ -2,7 +2,7 @@ const PropsChild2 = (props) =>{
     console.log(props); // {values; {data1:**, data2:[], data3:{} }}
     
 
-    let {data1,data2,data3} = props.values;
+    let {data1,data2,data3} = props.value;
     return(
         <div>
         <h1>PropsChils 2</h1>
