@@ -37,18 +37,26 @@ const App = () => {
         {/* <FunctionBased/>
         <ClassBased/>
         <StatesInCBC/> */} 
+
         {/* <StatesInFBC/>
         <ThemeChange/> */}
+
+
         {/* <Counter/> */}
+
         {/* <StateTask1/> */}
+
         {/* <PropsParent/> */}
+
         {/* <ChildrenProps/> */}
         {/* <ChildrenProps2>
           <Child1/>
           <Child2/>
         </ChildrenProps2> */}
+
         {/* <UpliftingParent/> */}
-        <DrillingParent/>
+        
+        {/* <DrillingParent/> */}
 
         {/* Context : is use for manage both StateUplifting And DropDriling */}
         
