@@ -28,9 +28,12 @@ import ChildrenProps from "./AllTopics/04_ChildrenProps/ChildrenProps";
 import ChildrenProps2 from "./AllTopics/04_ChildrenProps/ChildrenProps2";
 import UpliftingParent from "./AllTopics/05_StateUplifting/UpliftingParent";
 import DrillingParent from "./AllTopics/06_PropsDriling/DrillingParent";
+import ContextChild2 from "./AllTopics/07_Context/ContextChild2";
 import ContextParent from "./AllTopics/07_Context/ContextParent";
 import ContextProvider from "./AllTopics/07_Context/ContextProvider";
 import ControlledForm1 from "./AllTopics/08_Forms/ControlledForm1";
+import ControlledForm2 from "./AllTopics/08_Forms/ControlledForm2";
+import Task1ControlledForm from "./AllTopics/08_Forms/Task1ControlledForm";
 
 
 const App = () => {
@@ -68,7 +71,9 @@ const App = () => {
         {/* <ContextProvider>
           <ContextParent/>
         </ContextProvider> */}
-        <ControlledForm1/>
+        {/* <ControlledForm1/> */}
+        {/* <Task1ControlledForm/> */}
+        <ControlledForm2/>
 
     </>
   );

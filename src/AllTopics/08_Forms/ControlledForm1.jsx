@@ -24,6 +24,7 @@ function ControlledForm1() {
     console.log(data);
 
     setMessage(`Welcome ${firstname} ${lastname}`);
+    
   
         // clearing input fields
       setFirstName("");
@@ -60,7 +61,7 @@ function ControlledForm1() {
         <br />
         <br />
 
-        <button >Submit</button>
+        <button>Submit</button>
       </form>
 
       {message && <h2>{message}</h2>}
