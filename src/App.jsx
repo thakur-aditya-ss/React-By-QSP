@@ -4,7 +4,7 @@
 //   return (
 //     <>
 //       <h1>I Am Parent Component</h1>
-//       <h2>{greet}</h2>  
+//       <h2>{greet}</h2>
 //        {/* yaha par {} Expression hai  */}
 
 //        <HeaderComp/>
@@ -30,53 +30,52 @@ import UpliftingParent from "./AllTopics/05_StateUplifting/UpliftingParent";
 import DrillingParent from "./AllTopics/06_PropsDriling/DrillingParent";
 import ContextChild2 from "./AllTopics/07_Context/ContextChild2";
 import ContextParent from "./AllTopics/07_Context/ContextParent";
-import ContextProvider from "./AllTopics/07_Context/ContextProvider";
+// import ContextProvider from "./AllTopics/07_Context/ContextProvider";
 import ControlledForm1 from "./AllTopics/08_Forms/ControlledForm1";
 import ControlledForm2 from "./AllTopics/08_Forms/ControlledForm2";
 import Task1ControlledForm from "./AllTopics/08_Forms/Task1ControlledForm";
 import TodoWrapper from "./TodoApp/TodoWrapper";
-
+import TodoContextProvider from "./TodoApp/TodoContextProvider"
 
 const App = () => {
-
   return (
     <>
-        {/* <FunctionBased/>
+      {/* <FunctionBased/>
         <ClassBased/>
-        <StatesInCBC/> */} 
+        <StatesInCBC/> */}
 
-        {/* <StatesInFBC/>
+      {/* <StatesInFBC/>
         <ThemeChange/> */}
 
+      {/* <Counter/> */}
 
-        {/* <Counter/> */}
+      {/* <StateTask1/> */}
 
-        {/* <StateTask1/> */}
+      {/* <PropsParent/> */}
 
-        {/* <PropsParent/> */}
-
-        {/* <ChildrenProps/> */}
-        {/* <ChildrenProps2>
+      {/* <ChildrenProps/> */}
+      {/* <ChildrenProps2>
           <Child1/>
           <Child2/>
         </ChildrenProps2> */}
 
-        {/* <UpliftingParent/> */}
+      {/* <UpliftingParent/> */}
 
-        {/* <DrillingParent/> */}
+      {/* <DrillingParent/> */}
 
-        {/* Context : is use for manage both StateUplifting And DropDrilling */}
+      {/* Context : is use for manage both StateUplifting And DropDrilling */}
 
-        {/* <ContextParent/> */}
+      {/* <ContextParent/> */}
 
-        {/* <ContextProvider>
+      {/* <ContextProvider>
           <ContextParent/>
         </ContextProvider> */}
-        {/* <ControlledForm1/> */}
-        {/* <Task1ControlledForm/> */}
-        {/* <ControlledForm2/> */}
-          <TodoWrapper/>
-
+      {/* <ControlledForm1/> */}
+      {/* <Task1ControlledForm/> */}
+      {/* <ControlledForm2/> */}
+     <TodoContextProvider>
+      <TodoWrapper/>
+     </TodoContextProvider>
     </>
   );
 };
