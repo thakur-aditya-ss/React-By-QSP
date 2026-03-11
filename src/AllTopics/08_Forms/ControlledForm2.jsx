@@ -7,6 +7,8 @@ const ControlledForm2 = () => {
     password: "",
   });
 
+  
+
   const handleChange = (e) => {
     let { name, value } = e.target;
     // console.log(name, value);
