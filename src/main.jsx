@@ -26,3 +26,6 @@ createRoot(document.getElementById("root")).render(<App/>);            // it is 
 //     <App/>
 // </ContextProvider>);            // it is use for providing access to all files
 // createRoot(document.getElementById("root")).render(App());               // it is Javascript way
+
+// global css
+import "./index.css";
