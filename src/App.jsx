@@ -37,6 +37,8 @@ import Task1ControlledForm from "./AllTopics/08_Forms/Task1ControlledForm";
 import TodoWrapper from "./TodoApp/TodoWrapper";
 import TodoContextProvider from "./TodoApp/TodoContextProvider"
 import ReactCss from "./AllTopics/09_ReactCSS/ReactCss";
+import TailwindPractice1 from "./AllTopics/10_TailwindCss/TailwindPractice1";
+import UncontrolledForm from "./AllTopics/08_Forms/UncontrolledForm";
 
 const App = () => {
   return (
@@ -84,6 +86,10 @@ const App = () => {
      {/* <h1>Hello Tailwind</h1>
      <input type="text" />
      <button className="bg-amber-950 ">Click me</button> */}
+
+     {/* <TailwindPractice1/> */}
+
+     <UncontrolledForm/>
     </>
   );
 };

@@ -70,3 +70,5 @@ function ControlledForm1() {
 };
 
 export default ControlledForm1;
+
+// Controlled form virtual dom par work karta hai aur Uncontrolled form ye real dom par work karta hai 

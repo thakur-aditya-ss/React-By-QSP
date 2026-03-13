@@ -11,3 +11,5 @@ const ContextChild1 = () => {
 };
 
 export default ContextChild1;
+
+// Context is use to avoid prop-drilling
