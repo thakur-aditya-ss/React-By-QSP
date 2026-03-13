@@ -1,15 +1,21 @@
-*::after,*::before{
+@import "tailwindcss";
+
+/* in Tailwind margin padding are pre install if we can use margin : 0; abd padding : 0 ; then tailwind css property not work properly */
+
+
+
+/* *::after,*::before{
     box-sizing: border-box;
 }
 
 *{
     margin: 0;
     padding: 0;
-}
+} */
 
-body{
+/* body{
     font-family: sans-serif;
-}
+} */
 
 .container{
     background-color: rebeccapurple;
