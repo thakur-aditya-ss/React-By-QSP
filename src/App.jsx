@@ -39,8 +39,19 @@ import TodoContextProvider from "./TodoApp/TodoContextProvider"
 import ReactCss from "./AllTopics/09_ReactCSS/ReactCss";
 import TailwindPractice1 from "./AllTopics/10_TailwindCss/TailwindPractice1";
 import UncontrolledForm from "./AllTopics/08_Forms/UncontrolledForm";
+import LifeCycleInCbc from "./AllTopics/11_LifeCycle/LifeCycleinCbc";
+import { useState } from "react";
+import LifeCycleInFbc from "./AllTopics/11_LifeCycle/LifeCycleInFbc";
+
+
+  
+
 
 const App = () => {
+const[toggle, setToggle] = useState(false);
+  const handleToogle = () => setToggle((pre) => !pre);
+
+
   return (
     <>
       {/* <FunctionBased/>
@@ -89,7 +100,12 @@ const App = () => {
 
      {/* <TailwindPractice1/> */}
 
-     <UncontrolledForm/>
+     {/* <UncontrolledForm/> */}
+
+      {/* <button onClick={handleToogle}>Toggle me</button>
+     {toggle && <LifeCycleInCbc/>} */}
+
+     <LifeCycleInFbc/>
     </>
   );
 };
