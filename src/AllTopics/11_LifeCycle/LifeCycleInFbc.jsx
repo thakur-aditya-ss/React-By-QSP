@@ -27,7 +27,7 @@ const LifeCycleInFbc = () => {
 
   return (
     <div className="p-5">
-      <h1 className="text-center text-4xl ">
+      <h1 className="text-center text-4xl underline-offset-4">
         Learn LifeCycle In Function Component : {count}
       </h1>
 

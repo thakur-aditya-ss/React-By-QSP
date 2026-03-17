@@ -42,6 +42,8 @@ import UncontrolledForm from "./AllTopics/08_Forms/UncontrolledForm";
 import LifeCycleInCbc from "./AllTopics/11_LifeCycle/LifeCycleinCbc";
 import { useState } from "react";
 import LifeCycleInFbc from "./AllTopics/11_LifeCycle/LifeCycleInFbc";
+import Todos from "./AllTopics/12_Fetch/Todos";
+import Products from "./AllTopics/12_Fetch/Products";
 
 
   
@@ -105,7 +107,11 @@ const[toggle, setToggle] = useState(false);
       {/* <button onClick={handleToogle}>Toggle me</button>
      {toggle && <LifeCycleInCbc/>} */}
 
-     <LifeCycleInFbc/>
+     {/* <LifeCycleInFbc/> */}
+
+     {/* <Todos/> */}
+
+     <Products/>
     </>
   );
 };
