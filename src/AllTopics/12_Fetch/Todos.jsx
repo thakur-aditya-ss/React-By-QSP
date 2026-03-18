@@ -19,9 +19,10 @@ const Todos = () => {
   useEffect(() => {
     getTodos(); // invokes during mounting phase
   }, []);
+
   return (
     <div>
-      <h1>Todos</h1>
+      <h1>All Todos</h1>
 
       {allTodos.length === 0 ? (
         <>
@@ -31,7 +32,7 @@ const Todos = () => {
         <>
           <section className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
             {allTodos.map((ele) => {
-              return <Todo key={ele.id} ele={ele}/>
+              return <Todo key={ele.id} ele={ele} />;
             })}
           </section>
         </>

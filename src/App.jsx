@@ -44,6 +44,9 @@ import { useState } from "react";
 import LifeCycleInFbc from "./AllTopics/11_LifeCycle/LifeCycleInFbc";
 import Todos from "./AllTopics/12_Fetch/Todos";
 import Products from "./AllTopics/12_Fetch/Products";
+import ReducerCounter from "./AllTopics/13_Reducer/ReducerCounter";
+import ReducerTodo from "./AllTopics/13_Reducer/ReducerTodo";
+import Users from "./AllTopics/14_CoustomHook/users";
 
 
   
@@ -111,7 +114,13 @@ const[toggle, setToggle] = useState(false);
 
      {/* <Todos/> */}
 
-     <Products/>
+     {/* <Products/> */}
+
+     {/* <ReducerCounter/> */}
+
+     {/* <ReducerTodo/> */}
+
+     <Users/>
     </>
   );
 };
