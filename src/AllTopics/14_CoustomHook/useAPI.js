@@ -10,9 +10,9 @@ export const useAPI = (url) => {
     try {
         let resp = await fetch(url)
         let data = await resp.json();
-        // console.log(data);
-        setAPIData(data);
-         } catch (error) {
+        console.log(data.users);
+        setAPIData(data.users);
+    } catch (error) {
         console.log(error.response);
     } finally {
         setLoading(false);
@@ -24,5 +24,4 @@ export const useAPI = (url) => {
    }, [url])
 
    return { apiData, loading};
-   
 };

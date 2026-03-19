@@ -47,6 +47,8 @@ import Products from "./AllTopics/12_Fetch/Products";
 import ReducerCounter from "./AllTopics/13_Reducer/ReducerCounter";
 import ReducerTodo from "./AllTopics/13_Reducer/ReducerTodo";
 import Users from "./AllTopics/14_CoustomHook/users";
+import ReducerCounterObject from "./AllTopics/13_Reducer/ReducerCounterObject";
+import MemoExample from "./AllTopics/15_MemoAndCallback/MemoExample";
 
 
   
@@ -120,7 +122,11 @@ const[toggle, setToggle] = useState(false);
 
      {/* <ReducerTodo/> */}
 
-     <Users/>
+     {/* <Users/> */}
+
+     {/* <ReducerCounterObject/> */}
+
+     <MemoExample/>
     </>
   );
 };

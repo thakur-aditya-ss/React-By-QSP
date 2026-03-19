@@ -6,7 +6,11 @@ const reducerFunc = (prev, action) => {
     switch (action.type) {
         case "add":
             return [...prev, action.payload];
-    } 
+        case "update":
+            return {}
+        case "remove":
+            return {}
+    }
 };
 
 const ReducerTodo = () => {

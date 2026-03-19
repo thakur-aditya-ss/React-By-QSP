@@ -10,7 +10,7 @@ const Users = () => {
     
   return (
     <div>
-        <h1 className='font-bold text-4xl '>Users</h1>
+        <h1 className='font-bold text-4xl'>Users</h1>
     </div>
   );
 };
