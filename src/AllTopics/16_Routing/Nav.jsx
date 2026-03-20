@@ -15,14 +15,31 @@
 
 // ! Using Routing - React Router DOM
 
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Nav = () => {
   return (
     <header className="p-5 bg-violet-600 text-white font-bold">
-      <nav className="flex gap-10">
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
+      <nav className="flex gap-10 ">
+        {/* <Link to="/">Home</Link>
+        <Link to="/about">About</Link> */}
+
+        <NavLink
+          className={({ isActive }) =>
+            `${isActive ? "bg-white text-black" : ""} transition ease-in py-1 px-3 rounded`
+          }
+          to="/"
+        >
+          Home
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            `${isActive ? "bg-white text-black" : ""} transition ease-in py-1 px-3 rounded`
+          }
+          to="/about"
+        >
+          About
+        </NavLink>
       </nav>
     </header>
   );
