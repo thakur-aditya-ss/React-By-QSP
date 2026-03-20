@@ -35,7 +35,7 @@ import ControlledForm1 from "./AllTopics/08_Forms/ControlledForm1";
 import ControlledForm2 from "./AllTopics/08_Forms/ControlledForm2";
 import Task1ControlledForm from "./AllTopics/08_Forms/Task1ControlledForm";
 import TodoWrapper from "./TodoApp/TodoWrapper";
-import TodoContextProvider from "./TodoApp/TodoContextProvider"
+import TodoContextProvider from "./TodoApp/TodoContextProvider";
 import ReactCss from "./AllTopics/09_ReactCSS/ReactCss";
 import TailwindPractice1 from "./AllTopics/10_TailwindCss/TailwindPractice1";
 import UncontrolledForm from "./AllTopics/08_Forms/UncontrolledForm";
@@ -46,19 +46,15 @@ import Todos from "./AllTopics/12_Fetch/Todos";
 import Products from "./AllTopics/12_Fetch/Products";
 import ReducerCounter from "./AllTopics/13_Reducer/ReducerCounter";
 import ReducerTodo from "./AllTopics/13_Reducer/ReducerTodo";
-import Users from "./AllTopics/14_CoustomHook/users";
+// import Users from "./AllTopics/14_CoustomHook/users";
 import ReducerCounterObject from "./AllTopics/13_Reducer/ReducerCounterObject";
 import MemoExample from "./AllTopics/15_MemoAndCallback/MemoExample";
 import Dashboard from "./AllTopics/16_Routing/Dashboard";
-
-
-  
-
+import ParentHoc from "./AllTopics/17_Hoc/ParentHoc";
 
 const App = () => {
-const[toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(false);
   const handleToogle = () => setToggle((pre) => !pre);
-
 
   return (
     <>
@@ -95,41 +91,43 @@ const[toggle, setToggle] = useState(false);
       {/* <ControlledForm1/> */}
       {/* <Task1ControlledForm/> */}
       {/* <ControlledForm2/> */}
-      
-     {/* <TodoContextProvider>
+
+      {/* <TodoContextProvider>
       <TodoWrapper/>
      </TodoContextProvider> */}
 
-     {/* <ReactCss/> */}
+      {/* <ReactCss/> */}
 
-     {/* <h1>Hello Tailwind</h1>
+      {/* <h1>Hello Tailwind</h1>
      <input type="text" />
      <button className="bg-amber-950 ">Click me</button> */}
 
-     {/* <TailwindPractice1/> */}
+      {/* <TailwindPractice1/> */}
 
-     {/* <UncontrolledForm/> */}
+      {/* <UncontrolledForm/> */}
 
       {/* <button onClick={handleToogle}>Toggle me</button>
      {toggle && <LifeCycleInCbc/>} */}
 
-     {/* <LifeCycleInFbc/> */}
+      {/* <LifeCycleInFbc/> */}
 
-     {/* <Todos/> */}
+      {/* <Todos/> */}
 
-     {/* <Products/> */}
+      {/* <Products/> */}
 
-     {/* <ReducerCounter/> */}
+      {/* <ReducerCounter/> */}
 
-     {/* <ReducerTodo/> */}
+      {/* <ReducerTodo/> */}
 
-     {/* <Users/> */}
+      {/* <Users/> */}
 
-     {/* <ReducerCounterObject/> */}
+      {/* <ReducerCounterObject/> */}
 
-     {/* <MemoExample/> */}
+      {/* <MemoExample/> */}
 
-     <Dashboard/>
+      <Dashboard/>
+
+      {/* <ParentHoc /> */}
     </>
   );
 };
