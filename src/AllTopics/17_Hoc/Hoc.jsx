@@ -1,9 +1,8 @@
-
 const HOC = (Wrapper) => {
-    let data = "Hello World";
+  let data = "Hello World";
 
-    return () => {
-        return <Wrapper data = {data}/>
-    };
+  return () => {
+    return <Wrapper data={data} />;
+  };
 };
 export default HOC;

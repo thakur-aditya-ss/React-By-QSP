@@ -2,8 +2,8 @@ import ChildHoc from "./ChildHoc";
 
 const ParentHoc = () => {
   return (
-    <div>
-      <h1 className="font-bold text-4xl text-center p-5">
+    <div className="text-center p-5">
+      <h1 className="font-bold text-4xl my-5">
         Learn Higher Order Component
       </h1>
 
