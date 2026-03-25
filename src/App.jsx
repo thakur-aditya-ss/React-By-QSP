@@ -133,7 +133,7 @@ const App = () => {
 
       {/* <ParentHoc /> */}
 
-      <ReduxCounter/>
+      {/* <ReduxCounter/> */}
     </>
   );
 };
