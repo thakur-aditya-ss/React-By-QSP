@@ -10,7 +10,7 @@ const Layout = () => {
         {/* outlet is use to render children routes */}
         <Outlet/>
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
