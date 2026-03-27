@@ -11,9 +11,9 @@ export const myRoutes = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: (
+        element:  (
           <PrivateRoute>
-            <Dashboard />
+            <Dashboard/>
           </PrivateRoute>
         ),
       },

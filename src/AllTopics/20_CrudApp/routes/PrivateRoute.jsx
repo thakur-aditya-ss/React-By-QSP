@@ -1,14 +1,14 @@
 // it is use for protect routing
 
-import { Children } from "react"
+
 import { Navigate } from "react-router-dom"
 
-const PrivateRoute = () => {
+const PrivateRoute = ({children}) => {
 
     let token = sessionStorage.getItem("token")
 
 
-  return token ? Children : <Navigate to={"/login"}/>;
+  return token ? children : <Navigate to={"/login"}/>;
 
 };
 
