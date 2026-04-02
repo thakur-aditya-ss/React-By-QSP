@@ -1,0 +1,47 @@
+{
+  "users": [
+    {
+      "username": "aditya_thakur_76",
+      "email": "aaasingh1010@gmail.com",
+      "password": "AdityaSingh",
+      "id": "oxiyk5J-e_I"
+    },
+    {
+      "username": "aditya_thakur_76",
+      "email": "aaasingh1010@gmail.com",
+      "password": "AdityaSingh",
+      "id": "pQBn5mG1_M0"
+    },
+    {
+      "username": "",
+      "email": "",
+      "password": "",
+      "id": "kBvEVcFEx80"
+    },
+    {
+      "username": "aditya_thakur_76",
+      "email": "aaasingh1010@gmail.com",
+      "password": "AdityaSingh",
+      "id": "e2iaPMVQnFQ"
+    },
+    {
+      "username": "dddfg",
+      "email": "sssaditya1010@gmail.com",
+      "password": "AdityaSingh",
+      "id": "ilQR7u327rI"
+    },
+    {
+      "username": "aditya_thakur_76",
+      "email": "aaasingh1010@gmail.com",
+      "password": "AdityaSingh",
+      "id": "EIseY0MACtg"
+    },
+    {
+      "username": "aditya_thakur_76",
+      "email": "aaasingh1010@gmail.com",
+      "password": "AdityaSingh",
+      "id": "LZz4AFwh0CA"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

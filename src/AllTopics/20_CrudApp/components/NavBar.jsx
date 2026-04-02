@@ -25,6 +25,9 @@ const NavBar = () => {
       <nav className="flex items-center gap-10 font-semibold">
         {token ? (
           <>
+          <Link to="/create-user" className='ps-5'> Create User</Link>
+
+        <Link to="/all-users" className='ps-5'> All Users</Link>
             <Link to={"/"}> Dashboard</Link>
             <div onClick={handleLogout}>Logout</div>
           </>
