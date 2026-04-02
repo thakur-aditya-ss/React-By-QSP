@@ -1,17 +1,17 @@
-import React from "react";
 import { Link, useNavigate } from "react-router-dom";
-// useNavigate use hota hai program me data send karne ke liye
+import toast from "react-hot-toast";
 
-const NavBar = () => {
-  let token = sessionStorage.getItem("token"); // item present hoga to item dega varna null de dega
+const Navbar = () => {
+  let token = sessionStorage.getItem("token");
   const navigate = useNavigate();
 
   const handleLogout = () => {
-    // logout karne ke bad puchne ke liye hai ki are you confirm to logout
-    let confirmMsg = confirm("Are you sure");
+    let confirmMsg = confirm("Are you sure ?");
     if (confirmMsg) {
       // remove token
       sessionStorage.removeItem("token");
+
+      toast.success("Logged out")
 
       // navigate to login
       navigate("/login");
@@ -19,21 +19,22 @@ const NavBar = () => {
   };
 
   return (
-    <header className="py-5  px-10 flex justify-between items-center shadow fixed top-0 w-full bg-white ">
+    <header className="py-5 px-10 flex justify-between items-center shadow fixed top-0 w-full bg-white ">
       <figure className="text-3xl font-bold">QManager</figure>
 
       <nav className="flex items-center gap-10 font-semibold">
         {token ? (
           <>
-          <Link to="/create-user" className='ps-5'> Create User</Link>
-
-        <Link to="/all-users" className='ps-5'> All Users</Link>
-            <Link to={"/"}> Dashboard</Link>
-            <div onClick={handleLogout}>Logout</div>
+            <Link to={"/"}>Dashboard</Link>
+            <Link to="/create-user">Create User</Link>
+            <Link to="/all-users">All Users</Link>
+            <div onClick={handleLogout} className="cursor-pointer">
+              Logout
+            </div>
           </>
         ) : (
           <>
-            <Link to={"/login"}> Login</Link>
+            <Link to={"/login"}>Login</Link>
           </>
         )}
       </nav>
@@ -41,4 +42,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default Navbar;

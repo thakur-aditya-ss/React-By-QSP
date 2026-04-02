@@ -1,9 +1,9 @@
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 import toast from "react-hot-toast";
 
-const CreateUserPage = () => {
+const EditUserPage = () => {
   const [formData, setFormData] = useState({
     username: "",
     email: "",
@@ -16,32 +16,49 @@ const CreateUserPage = () => {
   };
 
   const navigate = useNavigate();
+  const params = useParams();
 
-  const handleCreateUser = async (e) => {
+  async function getEditUser() {
+    try {
+      let resp = await axios.get(`http://localhost:9000/users/${params.id}`);
+      console.log(resp);
+      setFormData(resp.data);
+    } catch (error) {
+      console.log(error);
+      toast.error("something went wrong");
+    }
+  }
+
+  useEffect(() => {
+    getEditUser();
+  }, []);
+
+  const handleUpdateUser = async (e) => {
     e.preventDefault();
     console.log(formData);
     try {
-      //! USING AXIOS
-      let resp = await axios.post("http://localhost:9000/users", formData);
-      console.log(resp);
-      toast.success("User Created");
+      let res = await axios.put(
+        `http://localhost:9000/users/${params.id}`,
+        formData,
+      );
+      toast.success("User updated");
       navigate("/all-users");
     } catch (error) {
       console.log(error);
-      toast.error("Unable to create");
+      toast.error("Unable to update");
     }
   };
 
   return (
     <section className="pt-20 px-4 min-h-screen bg-gray-100">
       <header>
-        <h1 className="text-4xl p-8 font-bold text-center items-center">Create User Form</h1>
+        <h1 className="text-4xl p-8 font-bold text-center items-center">Edit User</h1>
       </header>
 
       <article className="border-2 rounded-2xl p-3  flex flex-col items-center justify-center min-h-4 w-95 ">
-        <form>
+        <form onSubmit={handleUpdateUser}>
           <div className="p-2">
-            <label htmlFor="username" className="font-bold p-3">Username :</label>
+            <label htmlFor="username" className="font-bold p-3">Username :  </label>
             <input
               type="text"
               name="username"
@@ -50,10 +67,11 @@ const CreateUserPage = () => {
               value={formData.username}
               onChange={handleChange}
               className="border rounded"
+              
             />
           </div>
           <div className="p-2">
-            <label htmlFor="email" className="font-bold p-3">Email :</label>
+            <label htmlFor="email" className="font-bold p-3">Email :  </label>
             <input
               type="email"
               name="email"
@@ -65,7 +83,7 @@ const CreateUserPage = () => {
             />
           </div>
           <div className="p-2">
-            <label htmlFor="password" className="font-bold p-3">Password :</label>
+            <label htmlFor="password" className="font-bold p-3">Password :  </label>
             <input
               type="password"
               name="password"
@@ -76,10 +94,8 @@ const CreateUserPage = () => {
               className="border rounded"
             />
           </div>
-          <div className="p-1 text-center">
-            <button type="button" onClick={handleCreateUser} className="font-bold ps-3 pe-3 mx-1 my-1 border rounded">
-              Create
-            </button>
+          <div className="p-1">
+            <button className="font-bold ps-3 pe-3 mx-1 my-1 border rounded">Update</button>
           </div>
         </form>
       </article>
@@ -87,4 +103,4 @@ const CreateUserPage = () => {
   );
 };
 
-export default CreateUserPage;
+export default EditUserPage;
