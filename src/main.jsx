@@ -21,7 +21,13 @@
 import { createRoot } from "react-dom/client";
 import App from "./App";
 import ContextProvider from "./AllTopics/07_Context/ContextProvider";
-createRoot(document.getElementById("root")).render(<App/>);            // it is React way
+import CodeSplittingExample from "./AllTopics/21_CodeSpliting/CodeSplittingExample";
+
+
+// createRoot(document.getElementById("root")).render(<CodeSplittingExample/>);  
+createRoot(document.getElementById("root")).render(<App/>);  
+
+          // it is React way
 // createRoot(document.getElementById("root")).render(<ContextProvider>
 //     <App/>
 // </ContextProvider>);            // it is use for providing access to all files
@@ -29,3 +35,4 @@ createRoot(document.getElementById("root")).render(<App/>);            // it is 
 
 // global css
 import "./index.css";
+
